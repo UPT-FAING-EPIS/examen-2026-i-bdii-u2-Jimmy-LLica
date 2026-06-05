@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "dgSpecHash": "HZ4KD1N33Dg=",
+  "success": true,
+  "projectFilePath": "/workspaces/examen-2026-i-bdii-u2-Jimmy-LLica/helpdesk/backend/HelpdeskAPI/HelpdeskAPI.csproj",
+  "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/dnsclient/1.6.1/dnsclient.1.6.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.aspnetcore.openapi/10.0.4/microsoft.aspnetcore.openapi.10.0.4.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.extensions.apidescription.server/10.0.0/microsoft.extensions.apidescription.server.10.0.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.extensions.options/10.0.8/microsoft.extensions.options.10.0.8.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.openapi/2.7.5/microsoft.openapi.2.7.5.nupkg.sha512",
+    "/home/codespace/.nuget/packages/mongodb.bson/3.9.0/mongodb.bson.3.9.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/mongodb.driver/3.9.0/mongodb.driver.3.9.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/sharpcompress/0.48.1/sharpcompress.0.48.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/snappier/1.3.1/snappier.1.3.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/swashbuckle.aspnetcore/10.2.1/swashbuckle.aspnetcore.10.2.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/swashbuckle.aspnetcore.swagger/10.2.1/swashbuckle.aspnetcore.swagger.10.2.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/swashbuckle.aspnetcore.swaggergen/10.2.1/swashbuckle.aspnetcore.swaggergen.10.2.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/swashbuckle.aspnetcore.swaggerui/10.2.1/swashbuckle.aspnetcore.swaggerui.10.2.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/zstdsharp.port/0.7.3/zstdsharp.port.0.7.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference Microsoft.Extensions.Options will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
+      "projectPath": "/workspaces/examen-2026-i-bdii-u2-Jimmy-LLica/helpdesk/backend/HelpdeskAPI/HelpdeskAPI.csproj",
+      "warningLevel": 1,
+      "filePath": "/workspaces/examen-2026-i-bdii-u2-Jimmy-LLica/helpdesk/backend/HelpdeskAPI/HelpdeskAPI.csproj",
+      "libraryId": "Microsoft.Extensions.Options",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}
