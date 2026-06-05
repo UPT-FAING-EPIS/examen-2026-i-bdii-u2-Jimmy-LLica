@@ -1,0 +1,28 @@
+name: Generate Database ER Diagram
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'backend/HelpdeskAPI/Entities/**'
+  workflow_dispatch:
+
+jobs:
+  diagram:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install -g mongo-erd
+      - name: Generate ER diagram
+        env:
+          MONGO_CONNECTION_STRING: ${{ secrets.MONGO_CONNECTION_STRING }}
+        run: |
+          mongo-erd --uri "$MONGO_CONNECTION_STRING" --output docs/er-diagram.png
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: er-diagram
+          path: docs/er-diagram.png

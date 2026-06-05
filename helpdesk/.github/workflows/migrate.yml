@@ -1,0 +1,23 @@
+name: Run Database Migrations
+
+on:
+  push:
+    paths:
+      - 'scripts/Migrator/**'
+      - 'backend/HelpdeskAPI/Entities/**'
+  workflow_dispatch:
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0'
+      - name: Run Migrator
+        env:
+          MONGO_CONNECTION_STRING: ${{ secrets.MONGO_CONNECTION_STRING }}
+        run: |
+          cd scripts/Migrator
+          dotnet run --no-build
